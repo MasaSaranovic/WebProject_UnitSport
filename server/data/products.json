@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "Dres majica Djokovica",
+        "price" : "20.95",
+        "description" : "Vrh dres bas dobrog kvaliteta. Materijal poliester sa kombinacijom pamuka....",
+        "ratings" : 4.5,
+        "images" : [{ 
+            "public_id" : "UnitSport/djokovic_slika",
+            "url" : "https://res.cloudinary.com/dwzy6hg6q/image/upload/v1629192720/UnitSport/djokovic_slika.jpg"
+        }],
+        "category" : "Majice",
+        "seller" : "Unit",
+        "stock" : 50, 
+        "numOfReviews" : 32, 
+        "reviews" : []
+    },
+    { 
+        "name" : "Dres Spanovic",
+        "price" : "15",
+        "description" : "Vrh dres bas dobrog kvaliteta. Materijal poliester sa kombinacijom pamuka....",
+        "ratings" : 4.8,
+        "images" : [{ 
+            "public_id" : "UnitSport/spanovic_slika",
+            "url" : "https://res.cloudinary.com/dwzy6hg6q/image/upload/v1629192720/UnitSport/spanovic_slika.jpg"
+        }],
+        "category" : "Dresovi",
+        "seller" : "Unit",
+        "stock" : 30, 
+        "numOfReviews" : 12, 
+        "reviews" : []
+    }
+]
