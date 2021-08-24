@@ -309,8 +309,8 @@ footer {
 }
 
 .wrapper form .btn {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: black;
+  border-color: lightgray;
   color: white;
   margin-top: 2.5rem;
 }
@@ -470,16 +470,16 @@ footer {
 
 /* Pagination */
 .page-item.active .page-link {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: black;
+  border-color: black;
 }
 
 .page-link {
-  color: #fa9c23;
+  color: black;
 }
 
 .page-link:hover {
-  color: #fa9c23;
+  color: blue;
 }
 
 /* Admin Sidebar */
