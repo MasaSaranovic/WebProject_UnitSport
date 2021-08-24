@@ -447,8 +447,8 @@ footer {
 }
 
 #edit_profile {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: black;
+  border-color: lightgray;
 }
 
 /* Confirm Order */
@@ -536,7 +536,7 @@ footer {
 #sidebar ul li.active > a,
 a[aria-expanded='true'] {
   color: #fff;
-  background: #232f3e;
+  background: black;
 }
 a[data-toggle='collapse'] {
   position: relative;
