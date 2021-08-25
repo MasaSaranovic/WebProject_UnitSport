@@ -13,6 +13,7 @@ const Header = () => {
     const dispatch = useDispatch();
 
     const { user, loading } = useSelector(state => state.auth)
+    const { cartItems } = useSelector(state => state.cart)
 
     const logoutHandler = () => {
         dispatch(logout());
@@ -38,7 +39,7 @@ const Header = () => {
 
                     <Link to="/cart" style={{ textDecoration: 'none' }} >
                         <span id="cart" className="ml-3">Korpa</span>
-                        <span className="ml-1" id="cart_count">3</span>
+                        <span className="ml-1" id="cart_count">{cartItems.length}</span>
                     </Link>
 
 
