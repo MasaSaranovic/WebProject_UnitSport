@@ -15,6 +15,7 @@ exports.newOrder = catchAsyncErrors(async (req, res, next) => {
         shippingPrice,
         totalPrice,
         paymentInfo
+        
     } = req.body;
 
     const order = await Order.create({

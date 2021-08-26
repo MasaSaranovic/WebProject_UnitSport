@@ -62,13 +62,12 @@ const Header = () => {
 
                             <div className="dropdown-menu" aria-labelledby="dropDownMenuButton">
 
-                                {user && user.role !== 'admin' ? (
-                                    <Link className="dropdown-item" to="/orders/me">Moje porudžbine</Link>
-                                ): (
+                                {user && user.role === 'admin' && (
                                     <Link className="dropdown-item" to="/dashboard">Komandna tabla</Link>
-                                )}
-                                <Link className="dropdown-item" to="/me">Moj profil</Link>
 
+                                )}
+                                <Link className="dropdown-item" to="/orders/me">Moje porudžbine</Link>
+                                <Link className="dropdown-item" to="/me">Moj profil</Link>
                                 <Link className="dropdown-item text-danger" to="/" onClick={logoutHandler}>
                                     Odjava
                                 </Link>
@@ -83,7 +82,7 @@ const Header = () => {
 
                 </div>
             </nav>
-        </Fragment>
+        </Fragment >
     )
 }
 

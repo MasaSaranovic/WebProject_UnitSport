@@ -44,6 +44,19 @@ exports.getProducts = catchAsyncErrors(async (req, res, next) => {
     })
 
 })
+
+//Get all products (Admin) =>  /api/v1/admin/products
+exports.getAdminProducts = catchAsyncErrors(async (req, res, next) => {
+
+    const products = await Product.find();
+
+    res.status(200).json({
+        success: true,
+        products
+    })
+
+})
+
 //Get single product details  =>  /api/v1/product/:id
 
 exports.getSingleProduct = catchAsyncErrors(async (req, res, next) => {
@@ -150,6 +163,7 @@ exports.getProductReviews = catchAsyncErrors(async (req, res, next) => {
 
 //Delete Product Reviews  =>  /api/v1/reviews
 exports.deleteReview = catchAsyncErrors(async (req, res, next) => {
+    
     const product = await Product.findById(req.query.productId);
 
     const reviews = product.reviews.filter(review => review._id.toString() !== req.query.id.toString());
