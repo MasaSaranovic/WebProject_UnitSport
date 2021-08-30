@@ -17,11 +17,9 @@ const Range = createSliderWithTooltip(Slider.Range)
 const Home = ({ match }) => {
 
   const [currentPage, setCurrentPage] = useState(1)
-  const [price, setPrice] = useState([1, 1000])
+  const [price, setPrice] = useState([1, 300])
   const [category, setCategory] = useState('')
   const [rating, setRating] = useState(0)
-
-
 
   const categories = [
     'Majice',
@@ -79,7 +77,7 @@ const Home = ({ match }) => {
                       <Range
                         marks={{
                           1: `$1`,
-                          1000: `$300`
+                          300: `$300`
                         }}
                         min={1}
                         max={300}

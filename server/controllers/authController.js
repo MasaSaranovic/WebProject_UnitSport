@@ -32,6 +32,7 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
     sendToken(user, 200, res)
 })
 
+
 //Login User  =>  /api/v1/login 
 exports.loginUser = catchAsyncErrors(async (req, res, next) => {
     const { email, password } = req.body;
@@ -263,7 +264,9 @@ exports.deleteUser = catchAsyncErrors(async (req, res, next) => {
         return next(new ErrorHandler(`User does not found with id: ${req.params.id}`))
     }
 
-    //Remove avatar from cloudinary - TODO
+    //Remove avatar from cloudinary
+    const image_id = user.avatar.public_id;
+    await cloudinary.v2.uploader.destroy(image_id);
 
     await user.remove();
 

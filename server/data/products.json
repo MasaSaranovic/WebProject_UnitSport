@@ -6,7 +6,7 @@
         "ratings" : 4.5,
         "images" : [{ 
             "public_id" : "UnitSport/djokovic_slika",
-            "url" : "https://res.cloudinary.com/dwzy6hg6q/image/upload/v1629192720/UnitSport/djokovic_slika.jpg"
+            "url" : "https://res.cloudinary.com/unitsport/image/upload/v1629192720/UnitSport/djokovic_slika.jpg"
         }],
         "category" : "Majice",
         "seller" : "Unit",
@@ -21,7 +21,7 @@
         "ratings" : 4.8,
         "images" : [{ 
             "public_id" : "UnitSport/spanovic_slika",
-            "url" : "https://res.cloudinary.com/dwzy6hg6q/image/upload/v1629192720/UnitSport/spanovic_slika.jpg"
+            "url" : "https://res.cloudinary.com/unitsport/image/upload/v1629192720/UnitSport/spanovic_slika.jpg"
         }],
         "category" : "Dresovi",
         "seller" : "Unit",

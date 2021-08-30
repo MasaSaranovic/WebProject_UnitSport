@@ -122,7 +122,7 @@ const ProductDetails = ({ match }) => {
             {loading ? <Loader /> : (
                 <Fragment>
                     <MetaData title={product.name} />
-                    <div className="row f-flex justify-content-around">
+                    <div className="row f-flex justify-content-around margin2">
                         <div className="col-12 col-lg-5 img-fluid" id="product_image">
                             <Carousel pause='hover'>
                                 {product.images && product.images.map(image => (

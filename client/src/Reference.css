@@ -1,0 +1,23 @@
+.gallery {
+    margin: 20px;
+    float: none;
+    display: initial;
+    align-items: normal;
+    width: 180px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+
+  }
+  
+  .desc {
+    padding: 20px;
+    text-align: center;
+    display: center;
+    font-weight: bold;
+    font-size: x-large;
+  }

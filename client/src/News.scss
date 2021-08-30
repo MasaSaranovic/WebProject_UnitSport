@@ -1,0 +1,38 @@
+$primary-color: #fff;
+$border-radius: 5px;
+
+
+.container1 {
+    height: 310px;
+    margin-bottom: 80px;
+    background-color: $primary-color;
+    position: relative;
+    display: center;
+    width: 100%;
+    grid-template-columns: 300px 600px;
+    border-radius: $border-radius;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.356);
+    img {
+        float: left;
+        width: 400px;
+        height: 300px;
+        padding: 40px;
+        border-radius: $border-radius 0 0 $border-radius;
+    }
+}
+.container__text1 {
+    padding: 20px 0px 0px;
+    margin-top: 40px;
+    float: right;
+    width: 60%;
+    margin-right: 50px;
+    h1 {
+        color: black;
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
